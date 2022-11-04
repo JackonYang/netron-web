@@ -19,7 +19,7 @@ def main():
         metavar='MODEL_FILE', help='model file to serve', nargs='?', default=None)
     parser.add_argument('-b', '--browse', help='launch web browser', action='store_true')
     parser.add_argument('-p', '--port', help='port to serve', type=int)
-    parser.add_argument('--host', metavar='ADDR', help='host to serve', default='localhost')
+    parser.add_argument('--host', metavar='ADDR', help='host to serve', default='0.0.0.0')
     parser.add_argument('--verbosity',
         metavar='LEVEL', help='output verbosity (quiet, default, debug)',
         choices=[ 'quiet', 'default', 'debug', '0', '1', '2' ], default='default')
